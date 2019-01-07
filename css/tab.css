@@ -1,0 +1,54 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+}
+
+ul{
+	list-style: none;
+}
+
+.tabBox{
+	margin: 20px auto;
+	width: 500px;
+}
+
+.tabBox ul{
+	position: relative;
+	top: 1px;
+	overflow: hidden;
+}
+/*
+.tabBox ul:after{
+	display: block;
+	content: '';
+	clear: both;
+}
+*/
+.tabBox ul li{
+	float: left;
+	margin-right: 10px;
+	padding: 0 10px;
+	height: 35px;
+	line-height: 35px;
+	border: 1px solid #999;
+	background: #ccc;
+	cursor: pointer;
+}
+
+.tabBox ul li.select{
+	background: #fff;
+	border-bottom-color: #fff;
+}
+
+.tabBox div{
+	display: none;
+	height: 150px;
+	line-height: 150px;
+	text-align: center;
+	border: 1px solid #999;
+}
+
+.tabBox div.select{
+	display: block;
+}
